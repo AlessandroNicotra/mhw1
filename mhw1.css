@@ -18,6 +18,23 @@ header{
     color: white;
 }
 
+header h1{
+    z-index: 1;
+    font-family: 'Noto Serif', serif;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+header::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 nav{
     margin: 20px;
 }
@@ -31,12 +48,12 @@ nav{
 #link a{
     margin: 10px;
     background: #0e70cb;
+    font-family: 'Arimo', sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
     color: white;
     padding: 5px 15px;
     border-radius: 25px;
-    font-family: 'Arimo', sans-serif;
 }
 
 #menu{
@@ -50,23 +67,6 @@ nav{
     height: 3px;
     background-color: #0e70cb;
     margin: 5px 0;
-}
-
-header h1{
-    z-index: 1;
-    font-family: 'Noto Serif', serif;
-    font-size: 1.5rem;
-    line-height: 1;
-}
-
-header::before{
-    content: '';
-    background-color: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 section{
@@ -87,8 +87,6 @@ section{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    flex-grow: 1;
-    position: relative;
     margin: 10px;
     padding: 5px;
     border: solid 2px rgba(0, 0, 0, 0.5);
@@ -97,14 +95,13 @@ section{
 
 #details div h1{
     margin-bottom: 5px;
-    font-weight: bold;
     font-size: 1.75rem;
     text-align: center;
     color: #0e70cb;
 }
 
 #details div p{
-    margin: 10px;
+    margin: 5px;
     font-size: 1.25rem;
     text-align: center;
     color: #0e4a91;
@@ -119,11 +116,12 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: rgb(31, 31, 31);
+    margin-top: 10px;
     height: 250px;
     color: white;
     padding: 10px;
-    text-align: center;
     font-family: 'Arimo', sans-serif;
     font-size: 1.5rem;
     font-style: italic;
@@ -146,11 +144,6 @@ footer{
 
     #details{
         flex-direction: column;
-    }
-
-    #details img{
-        height: 100%;
-        width: 100%;
     }
 
     #details div h1{
